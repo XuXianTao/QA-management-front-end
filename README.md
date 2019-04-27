@@ -2,6 +2,8 @@ Vue/iViewUI问答系统
 ===
 该问答数据管理系统的后台项目地址，请点[这里](https://github.com/XuXianTao/QA-management-back-end)
 ---
+# 系统依赖
+- `nodejs`|`npm` 参考[文档](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)安装`nodejsV10.x`
 
 # 部署
 该项目已默认配置url的基础路径为`/qa`
