@@ -1,6 +1,6 @@
 
 const is_dev = process.env.NODE_ENV === 'development';
-const url = is_dev?'ws://dev.local:9508': 'ws://xuxiantao.xin:9508'
+const url = is_dev?'ws://dev.local:9508': `ws://${location.hostname}:9508`
 
 let WsImportProgress = function(obj) {
   let ws = new WebSocket(url);
