@@ -2,6 +2,16 @@ Vue/iViewUI问答系统
 ===
 该问答数据管理系统的后台项目地址，请点[这里](https://github.com/XuXianTao/QA-management-back-end)
 ---
+
+# 部署
+该项目已默认配置url的基础路径为`/qa`
+【可以在`vue.config.js`中修改`baseUrl`的生产环境下基础路径配置，同时对于后台接口api地址的配置可以在`/src/apis/_base.js`中对生产环境基础路径进行修改】
+因此需要部署到服务器目录下的`/qa`目录
+1. 通过`npm install` 安装依赖
+2. 通过`npm run build`编译生成生产环境代码到`/dist`
+3. 以apache服务器为例，为`/dist`建立软链接到`/var/www/html/qa`
+4. 之后在进行后台项目的部署
+
 # 文件目录说明
 ~~~
 |-- qa_vue
