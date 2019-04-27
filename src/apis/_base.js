@@ -4,7 +4,7 @@ import Vue from 'vue';
 const is_dev = process.env.NODE_ENV === 'development';
 //:'http://gptp.dev.xuxiantao.xin'
 // 根据webpack环境决定请求的目标地址
-const baseurl = is_dev? 'http://bs.dev.local': 'http://gptp.dev.xuxiantao.xin'
+const baseurl = is_dev? 'http://bs.dev.local': '/qa/api'
 // 为请求结果添加拦截器
 Axios.interceptors.response.use(
   // 请求成功时候正常返回response内容

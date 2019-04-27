@@ -35,6 +35,7 @@ module.exports =  {
               chunks: ['student_page', 'chunk-vendors']
             }])
   },
+  baseUrl: process.env.NODE_ENV === 'production' ? '/qa' : '/',
   devServer: {
     port: 8080,
     disableHostCheck: true

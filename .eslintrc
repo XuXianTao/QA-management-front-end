@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "plugins": [
+    "vue"
+  ],
+  "rules": {
+    "vue/html-self-closing": "off",
+    "vue/no-parsing-error": [
+      2,
+      {
+        "x-invalid-end-tag": false
+      }
+    ],
+    "vue/max-attributes-per-line": "off",
+    "vue/html-quotes": "off",
+    "no-process-env": "off"
+  },
+  "globals": {
+    "process": true,
+    "module": true,
+    "_const": true,
+    "require": true,
+    "exports": true
+  }
+}
